@@ -1,1 +1,1 @@
-# bingo-gen
+# bingo-generator
