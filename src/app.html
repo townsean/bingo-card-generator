@@ -1,0 +1,18 @@
+<template>
+  <header>
+      <nav>
+          <h1>The Coding Couple</h1>
+          <p>Bingo Card Generator</p>
+          <ul>
+              <li repeat.for="route of router.navigation">
+                  <a href.bind="route.href">${route.title}</a>
+              </li>
+          </ul>
+      </nav>
+  </header>
+  <main>
+      <router-view></router-view>
+  </main>
+  <footer>      
+  </footer>
+</template>
