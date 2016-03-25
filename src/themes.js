@@ -1,16 +1,16 @@
 import { inject } from 'aurelia-framework';
-import { BingoData } from './bingo-data';
+import { BingoCardService } from './bingo-card-service';
 
-@inject(BingoData)
+@inject(BingoCardService)
 export class Themes {
     themes = [];
     
-    constructor(bingoData) {
-        this.bingoData = bingoData;
+    constructor(bingoCardService) {
+        this.bingoCardService = bingoCardService;
     }
     
     activate() {
-        return this.bingoData.getAll()
+        return this.bingoCardService.getAll()
                              .then(themes => this.themes = themes);
     }
 }
