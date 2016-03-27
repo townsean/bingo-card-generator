@@ -8,7 +8,7 @@ export class CardGenerator {
     }
     
     activate(params) {
-        return this.bingoCardService.getById(Number(params.id))
-                             .then(theme => this.theme = theme);
+        return this.bingoCardService.getBingoThemeById(Number(params.id))
+                                    .then(theme => this.theme = theme);
     }
 }

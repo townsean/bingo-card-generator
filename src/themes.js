@@ -10,7 +10,7 @@ export class Themes {
     }
     
     activate() {
-        return this.bingoCardService.getAll()
+        return this.bingoCardService.getAllBingoThemes()
                              .then(themes => this.themes = themes);
     }
 }

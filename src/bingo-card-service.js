@@ -13,15 +13,15 @@ export class BingoCardService {
         this.http = http;
     }
     
-    getAll() {
+    getAllBingoThemes() {
         return this.http.fetch('/bingo-themes.json')
                         .then(response => response.json())
                         .then(themes => this.themes = themes);
     }
     
-    getById(id) {
+    getBingoThemeById(id) {
         let promise = new Promise((resolve, reject) => {
-            this.getAll()
+            this.getAllBingoThemes()
                 .then(themes => { 
                     for (let theme of themes) {            
                         if( theme.id === id ) {           
@@ -34,7 +34,7 @@ export class BingoCardService {
         return promise;   
     }
     
-    getBingoCard(words) {
+    getBingoCardData(words) {
         
     }
 }
