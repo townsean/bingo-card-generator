@@ -1,8 +1,14 @@
 <template>
     <require from="./card-settings.js"></require>
+    <require from="./bingo-card.js"></require>
     
     <card-settings></card-settings>
-    
-    ${theme.words}
+        
+    <ol>
+        <li repeat.for="card of cards">
+           <bingo-card data.bind="card"></bingo-card>
+            <hr />
+        </li>
+    </ol>
     <a route-href="route: themes">Back to Theme Selection</a>
 </template>    

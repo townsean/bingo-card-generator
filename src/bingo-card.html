@@ -1,1 +1,7 @@
-<template></template>
+<template>
+    <table>
+        <tr repeat.for="i of 5">
+            <td repeat.for="j of 5">${ data[i * 5 + j] }</td>
+        </tr>
+    </table>
+</template>
