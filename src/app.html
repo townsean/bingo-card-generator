@@ -1,9 +1,8 @@
 <template>
   <header>
-      <nav>
-          <h1>The Coding Couple</h1>
-          <p>Bingo Card Generator</p>
-          <ul>
+      <nav class="navbar navbar-default">
+          <p class="navbar-brand">Bingo Card Generator</p>
+          <ul class="nav navbar-nav">
               <li repeat.for="route of router.navigation">
                   <a href.bind="route.href">${route.title}</a>
               </li>

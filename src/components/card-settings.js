@@ -4,4 +4,5 @@ import { customElement, bindable } from "aurelia-framework";
 export class CardSettings {
     @bindable theme;
     @bindable cardCount = 5;
+    @bindable heading;
 }

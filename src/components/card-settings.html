@@ -1,9 +1,12 @@
 <template>
-    <form>
-        <fieldset>
-            <legend>Card Settings</legend>
-            <label for="cardCount">Card Count</label>
-            <input id="cardCount" type="number" value.bind="cardCount" min="1" >
-        </fieldset>
+    <form >
+        <div class="form-group">            
+            <label for="title">Title</label>
+            <input type="text" class="form-control" id="title" value.bind="heading" placeholder="Title" >
+        </div>
+        <div class="form-group">            
+            <label for="cardCount">Count</label>
+            <input type="number" class="form-control" id="cardCount" value.bind="cardCount" min="1" >
+        </div>
     </form>
 </template>
