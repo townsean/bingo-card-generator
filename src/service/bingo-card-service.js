@@ -7,7 +7,7 @@ export class BingoCardService {
     constructor(http) {
         http.configure(config => {
             config
-                .withBaseUrl('./src');
+                .withBaseUrl('./src/service');
         });
         
         this.http = http;

@@ -1,0 +1,13 @@
+<template>
+    <require from="../components/card-settings.js"></require>
+    <require from="../components/bingo-card.js"></require>
+    
+    <card-settings></card-settings>        
+    
+    <div repeat.for="card of cards">
+        <bingo-card data.bind="card" heading.bind="theme.name"></bingo-card>        
+    </div>
+ 
+    
+    <a route-href="route: themes">Back to Theme Selection</a>
+</template>    

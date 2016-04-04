@@ -1,5 +1,5 @@
 import { inject } from "aurelia-framework";
-import { BingoCardService } from './bingo-card-service';
+import { BingoCardService } from '../service/bingo-card-service';
 
 @inject(BingoCardService)
 export class CardGenerator {    
