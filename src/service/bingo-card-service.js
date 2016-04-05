@@ -4,6 +4,10 @@ import 'fetch';
 
 @inject(HttpClient)
 export class BingoCardService {
+    
+    /*
+    *
+    */
     constructor(http) {
         http.configure(config => {
             config
@@ -13,12 +17,18 @@ export class BingoCardService {
         this.http = http;
     }
     
+    /*
+    *
+    */
     getAllBingoThemes() {
         return this.http.fetch('/bingo-themes.json')
                         .then(response => response.json())
                         .then(themes => this.themes = themes);
     }
     
+    /*
+    *
+    */
     getBingoThemeById(id) {
         let promise = new Promise((resolve, reject) => {
             this.getAllBingoThemes()
@@ -34,6 +44,9 @@ export class BingoCardService {
         return promise;   
     }
     
+    /*
+    *
+    */
     getBingoCardData(words) {
         let cardData = [];
         let usedWords = [];
