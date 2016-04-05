@@ -1,12 +1,15 @@
 <template>
     <form >
-        <div class="form-group">            
-            <label for="title">Title</label>
-            <input type="text" class="form-control" id="title" value.bind="heading" placeholder="Title" >
-        </div>
-        <div class="form-group">            
-            <label for="cardCount">Count</label>
-            <input type="number" class="form-control" id="cardCount" value.bind="cardCount" min="1" >
-        </div>
+        <fieldset>
+            <legend>Settings</legend>
+            <div class="form-group">            
+                <label for="title">Title</label>
+                <input type="text" class="form-control" id="title" value.bind="heading" placeholder="Title" >
+            </div>
+            <div class="form-group">            
+                <label for="cardCount">Count</label>
+                <input type="number" class="form-control" id="cardCount" value.bind="cardCount" min="1" >
+            </div>
+        </fieldset>
     </form>
 </template>

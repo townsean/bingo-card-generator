@@ -1,18 +1,26 @@
-table {
-    table-layout: fixed;
-    border-collapse: collapse;    
-    border: 1px solid black;
-    width: 500px;
-    height: 500px;
+
+.bingo-card-panel {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
-th,
-td {
+.bingo-card {
+    table-layout: fixed;
+    border-collapse: collapse;    
+    width: 500px;
+    height: 500px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.bingo-card th,
+.bingo-card td {
     border: 1px solid black;
-    padding: .5em;
     text-align: center;
     width: 50px;
     height: 50px;
+    padding: 2px;
 }
 
 .bingo-card-heading {
@@ -20,6 +28,8 @@ td {
     width: 500px; 
     padding-bottom: 5px;
     padding-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .bingo-card-heading > h1 {

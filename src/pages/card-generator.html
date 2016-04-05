@@ -2,12 +2,13 @@
     <require from="../components/card-settings.js"></require>
     <require from="../components/bingo-card.js"></require>
     
-    <card-settings class="col-md-4" heading.bind="theme.name" ></card-settings>        
+    <aside class="col-md-2">
+        <card-settings heading.two-way="theme.name" cardCount.two-way="cardCount" ></card-settings>        
+        <a route-href="route: themes">Back to Theme Selection</a>        
+    </aside>
     
-    <section class="col-md-8">
-        <bingo-card repeat.for="card of cards" data.bind="card" heading.bind="theme.name"></bingo-card>        
+    <section class="col-md-10">
+        <bingo-card repeat.for="card of cards" data.bind="card" heading.bind="theme.name"></bingo-card>
     </section>
- 
     
-    <a route-href="route: themes">Back to Theme Selection</a>
 </template>    

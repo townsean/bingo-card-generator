@@ -2,6 +2,7 @@
     {
         "id": 1,
         "name": "Baby Shower",
+        "description": "A wonderful description about baby shower bingo cards",
         "words": [
             "hangers", "swaddle blanket", "receiving blanket", "carrier", "bottle brush", 
             "pacifier", "wipes", "burp cloth", "bib", "bottle",
@@ -23,6 +24,7 @@
     {
         "id": 2,
         "name": "Star Wars",
+        "description": "A wonderful description about Star Wars bingo cards",
         "words": [
             "Ewok", "Droid", "Darth Vader", "Princess Leia", "Han Solo", "Luke Skywalker",
             "Lando Calrissian", "Chewbacca", "Millennium Falcon", "C-3PO", "Boba Fett", "Jabba the Hutt",
@@ -45,6 +47,7 @@
     {
         "id": 3,
         "name": "Star Trek",
+        "description": "A wonderful description about Star Trek bingo cards",
         "words": [
             
         ]

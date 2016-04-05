@@ -1,14 +1,14 @@
 <template>
   <header>
-      <nav class="navbar navbar-default">
-          <p class="navbar-brand">Bingo Card Generator</p>
-          <ul class="nav navbar-nav">
-              <li repeat.for="route of router.navigation">
-                  <a href.bind="route.href">${route.title}</a>
-              </li>
-          </ul>
+      <nav class="navbar navbar-inverse" role="navigation">
+        <p class="navbar-brand">Bingo Card Generator</p>
+        <ul class="nav navbar-nav">
+            <li repeat.for="route of router.navigation">
+                <a class="$index ? 'active' : ''" href.bind="route.href">${route.title}</a>
+            </li>
+        </ul>
+        <span class="fa fa-spinner fa-spin navbar-right" show.bind="router.isNavigating"></span>
       </nav>
-      <span class="fa fa-spinner fa-spin" show.bind="router.isNavigating"></span>
   </header>
   <main>
       <router-view></router-view>
