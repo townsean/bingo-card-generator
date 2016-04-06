@@ -37,3 +37,14 @@
     margin: 5px;
     text-align: center;
 }
+
+.word-list {
+    height: 450px;
+    overflow-y: scroll;
+}
+
+.random-word-box {
+    height: 8em;
+}
+
+
