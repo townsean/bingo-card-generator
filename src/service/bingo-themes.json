@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "name": "Baby Shower",
+        "description": "A wonderful description about baby shower bingo cards",
+        "imgUrl": "../img/newborn.jpg",
+        "words": [
+            "hangers", "swaddle blanket", "receiving blanket", "carrier", "bottle brush", 
+            "pacifier", "wipes", "burp cloth", "bib", "bottle",
+            "nursing pillow", "hand sanitizer", "wipes dispenser", "diaper bag", "wash cloth",
+            "gas drops",  "diapers", "thermometer", "nasal aspirator", "shampoo",
+            "tub", "hooded towel", "bodysuit", "pants", "cap",
+            "monitor", "activity gym", "bouncer", "car seat", "lotion",
+            "grooming kit", "powder", "changing station", "diaper ointment", "crib bedding",
+            "nursing cover", "pacifier holder", "teether", "breast pump", "diapers",
+            "jumper", "learning toys", "swing", "book", "gift card", 
+            "socks", "shoes", "laundry detergent", "stroller", "breastfeeding accessories",
+            "bottle warmer", "bottle sterilizer", "nursing pad", "home safety", "first aid kit",
+            "humidifer", "air purifier", "dental care", "bath toys", "bottle drying rack",
+            "wall decor", "nursery lighting", "sippy cup", "shirt", "mittens",
+            "high chair", "mobile", "rattle", "diaper pail", "gate", "nail clippers",
+            "faucet cover", "dishwasher basket", "diaper caddy", "utensils", "wet bag"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Star Wars",
+        "description": "A wonderful description about Star Wars bingo cards",
+        "imgUrl": "../img/nebula1.jpg",
+        "words": [
+            "Ewok", "Droid", "Darth Vader", "Princess Leia", "Han Solo", "Luke Skywalker",
+            "Lando Calrissian", "Chewbacca", "Millennium Falcon", "C-3PO", "Boba Fett", "Jabba the Hutt",
+            "Mace Windu", "Obi-Wan Kenobi", "Darth Maul", "The Emperor", "Admiral Ackbar", "R2-D2",
+            "Stormtrooper", "BB-8", "Yoda", "Lightsaber", "Jar Jar Binks", "Padme Amidala", "Finn",
+            "Rey", "Captain Phasma", "Poe Dameron", "Kylo Ren", "Death Star", "Sith", 
+            "Jedi", "Endor", "Hoth", "Star Destroyer", "X-wing", "TIE Fighter", "Blaster",
+            "AT-AT", "Rebels", "Tatooine", "The Cantina", "Mos Eisley", "Echo Base", "Dagobah",
+            "Cloud City", "Jakku", "The Force", "Anakin", "Jawa", "Tusken Raiders", "Wookiee",
+            "Bantha", "Snoke", "Jango Fett", "Clone trooper", "Greedo", "General Grievous",
+            "Maz Kanata", "Speeder Bike", "Landspeeder", "Podracer", "Y-wing", "Carbonite", "The Empire Strikes Back",
+            "A New Hope", "Return of the Jedi", "A Force Awakens", "Trash compactor", "Dianoga",
+            "Starkiller Base", "Flyboy", "Star Wars", "The Phantom Menace", "Attack of the Clones", "Revenge of the Sith",
+            "The First Order", "Hyperdrive", "Imperial probe drone", "Nexu", "Trandoshan", "E-Web",
+            "Holodisc", "Holotable", "AT-ST", "B-wing", "Twi'leks", "Bib Fortuna", "Han shot first",
+            "Battle of Yavin", "Rancor", "Sarlacc", "Great Pit of Carkoon", "It's a trap", "New Republic",
+            "FN-2187", "General Hux"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Star Trek",
+        "description": "A wonderful description about Star Trek bingo cards",
+        "imgUrl": "../img/nebula2.jpg",
+        "words": [
+            
+        ]
+    }
+]

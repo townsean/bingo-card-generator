@@ -1,0 +1,24 @@
+<template>
+    <section class="panel-body">
+        <h1>Draw a word</h1>        
+        <div class="col-md-12">
+            <div>
+                <h3 show.bind="drawnWord">Word drawn: <strong>${drawnWord}</strong></h3>
+            </div>
+            <button class="btn btn-primary" type="button" name="draw" click.trigger="draw()">Draw</button>
+            <button class="btn btn-default" type="button" name="reset" click.trigger="reset()">Reset</button>
+        </div>
+        <section class="col-md-6 col-lg-3">
+            <h3>Selected words <span class="badge">${selectedWords.length}</span></h3>
+            <ul class="list-group word-list panel panel-default">
+                <li class="list-group-item" repeat.for="word of selectedWords">${word}</li>
+            <ul>
+        </section>
+        <section class="col-md-6 col-lg-3">
+            <h3>Remaining words <span class="badge">${remainingWords.length}</span></h3>
+            <ul class="list-group word-list panel panel-default">
+                <li class="list-group-item" repeat.for="word of remainingWords">${word}</li>
+            <ul>
+        </section>
+    </section>
+</template>
