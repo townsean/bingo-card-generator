@@ -1,0 +1,17 @@
+<template>
+    <require from="../components/card-settings.js"></require>
+    <require from="../components/bingo-card.js"></require>
+    
+    <aside class="col-md-2">
+        <card-settings heading.two-way="theme.name" card-count.two-way="cardCount"></card-settings>
+        <div> 
+            <button class="btn btn-primary">Print Cards</button>
+        </div>
+        <a route-href="route: themes">Back to Theme Selection</a>        
+    </aside>
+    
+    <section class="col-md-10 card-print-area">
+        <bingo-card repeat.for="card of cards" data.bind="card" heading.bind="theme.name"></bingo-card>
+    </section>
+    
+</template>    

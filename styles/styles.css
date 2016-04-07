@@ -1,0 +1,56 @@
+
+.bingo-card-panel {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.bingo-card {
+    table-layout: fixed;
+    border-collapse: collapse;    
+    width: 500px;
+    height: 500px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.bingo-card th,
+.bingo-card td {
+    border: 1px solid black;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    padding: 2px;
+}
+
+.bingo-card-heading {
+    background: black; 
+    width: 500px; 
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.bingo-card-heading > h1 {
+    color: white;
+    margin: 5px;
+    text-align: center;
+}
+
+.word-list {
+    height: 450px;
+    overflow-y: scroll;
+}
+
+.random-word-box {
+    height: 8em;
+}
+
+@media print {
+    .card-print-area {
+        height: 100%;
+        widows: 100%;
+    }
+}
+
