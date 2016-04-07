@@ -9,13 +9,13 @@
             <button class="btn btn-default" type="button" name="reset" click.trigger="reset()">Reset</button>
         </div>
         <section class="col-md-6 col-lg-3">
-            <h3>Selected words:</h3>
+            <h3>Selected words <span class="badge">${selectedWords.length}</span></h3>
             <ul class="list-group word-list panel panel-default">
                 <li class="list-group-item" repeat.for="word of selectedWords">${word}</li>
             <ul>
         </section>
         <section class="col-md-6 col-lg-3">
-            <h3>Remaining words:</h3>
+            <h3>Remaining words <span class="badge">${remainingWords.length}</span></h3>
             <ul class="list-group word-list panel panel-default">
                 <li class="list-group-item" repeat.for="word of remainingWords">${word}</li>
             <ul>

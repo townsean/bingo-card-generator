@@ -1,18 +1,13 @@
 import { inject, BindingEngine } from "aurelia-framework";
 import { BingoCardService } from '../service/bingo-card-service';
 
-@inject(BingoCardService)
-@inject(BindingEngine)
+@inject(BingoCardService, BindingEngine)
 export class CardGenerator { 
     cardCount = 15;
        
     constructor(bingoCardService, bindingEngine) {
-        this.bingoCardService = bingoCardService;   
-        
-        // this.subscription = bindingEngine.propertyObserver(this, 'cardCount')
-        //                                  .subscribe( (newValue, oldValue) => {
-        //                                     this.cards = this.getGeneratedCards();
-        //                                 });
+        this.bingoCardService = bingoCardService;  
+        this.bindingEngine = bindingEngine; 
     }
     
     /*
@@ -23,11 +18,17 @@ export class CardGenerator {
                                     .then(theme => this.theme = theme)
                                     .then( () => {
                                         this.cards = this.getGeneratedCards();
+                                    })
+                                    .then( () => {
+                                        this.subscription = this.bindingEngine.propertyObserver(this, 'cardCount')
+                                                                              .subscribe( (newValue, oldValue) => {
+                                                                                  this.cards = this.getGeneratedCards();
+                                                                              });
                                     });
     }
     
     deactivate() {
-        // this.subscription.dispose();
+        this.subscription.dispose();
     }
     
     /*
