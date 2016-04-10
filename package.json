@@ -1,17 +1,22 @@
 {
-  "name": "aurelia-beginner-kit-es2016",
-  "version": "1.0.0-beta.1.0.1",
-  "description": "A beginner starter kit for learning Aurelia with ES 2016.",
+  "name": "bingo-card-generator",
+  "version": "0.1",
+  "description": "An Aurelia web app that generates themed bingo cards.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "pretest": "npm run lint",
+    "start": "http-server -o -c-1",
+    "lint": "jshint *.js **/*.js"
+  },
   "keywords": [
     "aurelia",
-    "kit",
-    "beginner",
-    "skeleton"
+    "bingo",
+    "app"
   ],
-  "homepage": "http://aurelia.io",
-  "license": "CC0-1.0",
-  "author": "Rob Eisenberg <rob@bluespire.com> (http://robeisenberg.com/)",
-  "main": "dist/main.js",
+  "homepage": "http://thecodingcouple.com",
+  "license": "MIT",
+  "author": "Ashley Grenon <ashley@thecodingcouple.com> (http://thecodingcouple.com/)",
+  "main": "src/main.js",
   "jspm": {
     "dependencies": {
       "aurelia-animator-css": "npm:aurelia-animator-css@^1.0.0-beta.1.1.0",
@@ -40,5 +45,12 @@
         "main": "client/shim.min"
       }
     }
+  },
+  "devDependencies": {
+    "aurelia-bundler": "^0.3.2",
+    "gulp": "^3.9.1",
+    "jshint": "^2.9.1",
+    "mocha": "^2.4.5",
+    "should": "^8.3.0"
   }
 }
