@@ -20,7 +20,9 @@ export class RandomDrawing {
     }
     
     /*
-    *
+    * Removes a word from the pool of avaliable words and places it into
+    * a pool of previously selected words to simulate the user randomly
+    * drawing a slip of paper from a hat or a bowl.
     */
     draw() {
         let index = this.bingoCardService.getRandomInt(0, this.remainingWords.length);
@@ -31,7 +33,7 @@ export class RandomDrawing {
     }
     
     /*
-    *
+    * 
     */
     reset() {
         this.selectedWords = [];

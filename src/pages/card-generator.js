@@ -17,12 +17,10 @@ export class CardGenerator {
         return this.bingoCardService.getBingoThemeById(Number(params.id))
                                     .then(theme => this.theme = theme)
                                     .then( () => {
-                                        this.cards = this.getGeneratedCards();
-                                    })
-                                    .then( () => {
+                                        this.cards = this.getGeneratedCards(this.cardCount, this.theme.words);
                                         this.subscription = this.bindingEngine.propertyObserver(this, 'cardCount')
                                                                               .subscribe( (newValue, oldValue) => {
-                                                                                  this.cards = this.getGeneratedCards();
+                                                                                  this.cards = this.getGeneratedCards(this.cardCount, this.theme.words);
                                                                               });
                                     });
     }
@@ -34,11 +32,11 @@ export class CardGenerator {
     /*
     *
     */
-    getGeneratedCards() {
+    getGeneratedCards(count, words) {
         let cards = [];
         
-        for(let i = 0; i < this.cardCount; i++) {
-            cards[i] = this.bingoCardService.getBingoCardData(this.theme.words);
+        for(let i = 0; i < count; i++) {
+            cards[i] = this.bingoCardService.getBingoCardData(words);
         }
         
         return cards;
