@@ -1,18 +1,25 @@
 <template>
   <header>
-      <nav class="navbar navbar-inverse" role="navigation">
-        <p class="navbar-brand">Bingo Card Generator</p>
-        <ul class="nav navbar-nav">
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <p class="navbar-brand">Bingo Card Generator</p>
+            <ul class="nav navbar-nav">
             <li repeat.for="route of router.navigation">
                 <a class="$index ? 'active' : ''" href.bind="route.href">${route.title}</a>
             </li>
-        </ul>
-        <span class="fa fa-spinner fa-spin navbar-right" show.bind="router.isNavigating"></span>
-      </nav>
+            </ul>
+            <span class="fa fa-spinner fa-spin navbar-right" show.bind="router.isNavigating"></span>
+        </div>
+    </nav>
   </header>
   <main>
-      <router-view></router-view>
+      <div class="container">
+        <router-view></router-view>
+      </div>
   </main>
-  <footer>      
+  <footer class="navbar navbar-inverse navbar-fixed-bottom">
+      <div class="container">
+        <small class="copyright">&copy; The Coding Couple, 2016.</small>      
+      </div>
   </footer>
 </template>

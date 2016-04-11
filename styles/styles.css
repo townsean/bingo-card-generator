@@ -47,10 +47,7 @@
     height: 8em;
 }
 
-@media print {
-    .card-print-area {
-        height: 100%;
-        widows: 100%;
-    }
+.copyright {
+    color: white;
 }
 

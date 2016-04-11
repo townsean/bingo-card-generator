@@ -27,7 +27,7 @@ export class BingoCardService {
     }
     
     /*
-    *
+    * @param {Number} id
     */
     getBingoThemeById(id) {
         let promise = new Promise((resolve, reject) => {
@@ -45,7 +45,10 @@ export class BingoCardService {
     }
     
     /*
-    *
+    * Randomly fill in an array representing a bingo card with 
+    * words from given words array
+    * @param {Array} words
+    * @return {Array} cardData
     */
     getBingoCardData(words) {
         let cardData = [];
