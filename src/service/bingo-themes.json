@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Baby Shower",
-        "description": "A wonderful description about baby shower bingo cards",
+        "description": "Planning a baby shower? Create bingo cards using words found in many baby registries.",
         "imgUrl": "/img/newborn.jpg",
         "words": [
             "hangers", "swaddle blanket", "receiving blanket", "carrier", "bottle brush", 
@@ -25,7 +25,7 @@
     {
         "id": 2,
         "name": "Star Wars",
-        "description": "A wonderful description about Star Wars bingo cards",
+        "description": "In a galaxy far far away create bingo cards using terms from the Star Wars universe.",
         "imgUrl": "/img/nebula1.jpg",
         "words": [
             "Ewok", "Droid", "Darth Vader", "Princess Leia", "Han Solo", "Luke Skywalker",
@@ -49,10 +49,22 @@
     {
         "id": 3,
         "name": "Star Trek",
-        "description": "A wonderful description about Star Trek bingo cards",
+        "description": "From Klingons to tribbles create bingo cards using terms from the Star Trek universe.",
         "imgUrl": "/img/nebula2.jpg",
         "words": [
-            
+            "Klingon", "Q", "Tribble", "Kirk", "Spock", "Tachyon detection grid", 
+            "Romulan", "Vulcans", "Borg", "Deep Space Nine", "Kobayashi Maru", "Ferengi", "Cardassian",
+            "Bajoran", "Positronic brain", "Data", "Bird of Prey", "Make it So", "Picard", "Worf",
+            "Captain Janeway", "Phaser", "Tricorder", "Photon torpedo", "Dilithium", "Warp Core",
+            "Gold-pressed latinum", "Replicator", "Shields", "Impluse", "Enterprise", "Voyager",
+            "Delta Quadrant", "Communicator", "Betazoid", "Starfleet", "Holodeck", "Transporter",
+            "Ten Forward", "Darmok and Jalad at Tanagra", "Jefferies tubes", "Turbolift", "Prime Directive",
+            "LCARS", "VISOR", "Universal Translator", "Sto-vo-kor", "Pon farr", "Seven of Nine", "Orion",
+            "Uhura", "Biosphere", "Project Genesis", "Khan", "Ceti eel", "Trill", "Captain Sisko",
+            "Sickbay", "Away team",  "Red shirts", "Red alert", "Tractor beam", "Resistance is futile",
+            "Vulcan salute", "Live long and prosper", "Constitution-class", "Intrepid-class", "Collective",
+            "Scotty", "Assimilate", "Borg cube", "Nanoprobes", "Sensors", "Subspace", "Chakotay", "Bat'leth",
+            "Battle stations", "Mess hall", "Mind meld", "Earl Grey", "Number 1", "Shuttle", "Grand Nagus"
         ]
     }
 ]
