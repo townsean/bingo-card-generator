@@ -10,7 +10,7 @@ The first version of the bingo card generator was a [WPF desktop application](ht
 
 I originally thought this would be a single use application. However, a year later I used it again for a baby shower that I hosted for a friend.  Revisiting the application has prompted me to recreate it as a reusable, customizable web application.
 
-## Installation
+## Install
 
 ```
 npm install
