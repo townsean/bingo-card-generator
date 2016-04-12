@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Baby Shower",
-        "description": "Planning a baby shower? Create bingo cards using words found in many baby registries.",
+        "description": "Planning a baby shower? Create bingo cards using words common to many baby registries.",
         "imgUrl": "/img/newborn.jpg",
         "words": [
             "hangers", "swaddle blanket", "receiving blanket", "carrier", "bottle brush", 
@@ -25,7 +25,7 @@
     {
         "id": 2,
         "name": "Star Wars",
-        "description": "In a galaxy far far away create bingo cards using terms from the Star Wars universe.",
+        "description": "In a galaxy far, far away create bingo cards using terms found in the Star Wars universe.",
         "imgUrl": "/img/nebula1.jpg",
         "words": [
             "Ewok", "Droid", "Darth Vader", "Princess Leia", "Han Solo", "Luke Skywalker",
@@ -49,7 +49,7 @@
     {
         "id": 3,
         "name": "Star Trek",
-        "description": "From Klingons to tribbles create bingo cards using terms from the Star Trek universe.",
+        "description": "From Klingons to tribbles create bingo cards using terms found in the Star Trek universe.",
         "imgUrl": "/img/nebula2.jpg",
         "words": [
             "Klingon", "Q", "Tribble", "Kirk", "Spock", "Tachyon detection grid", 

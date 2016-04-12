@@ -1,8 +1,8 @@
 <template>
   <header>
-    <nav class="navbar navbar-inverse" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
-            <p class="navbar-brand">Bingo Card Generator</p>
+            <p class="navbar-brand">The Coding Couple</p>
             <ul class="nav navbar-nav">
             <li repeat.for="route of router.navigation">
                 <a class="$index ? 'active' : ''" href.bind="route.href">${route.title}</a>
