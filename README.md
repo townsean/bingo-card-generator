@@ -6,7 +6,7 @@ The bingo card generator is an Aurelia web app that gives users the ability to c
 
 ## Motivation
 
-The first version of the bingo card generator was a [WPF desktop application](https://github.com/townsean/wpf-bingo-card-generator) written on the eve of my baby shower.  I needed baby shower themed bingo cards for a baby shower game.  In the game, guests play bingo while the expecting parents (@[nsipid](https://github.com/nsipid) and I) open gifts. Guests mark off squares that match the opened item. I was not satisfied with existing bingo card options and I wanted something that I could easily customize to match items on our registry.
+The first version of the bingo card generator was a [WPF desktop application](https://github.com/townsean/wpf-bingo-card-generator) written on the eve of my baby shower.  I wanted baby shower themed bingo cards for a baby shower game.  In the game, guests play bingo while the expecting parents (@[nsipid](https://github.com/nsipid) and I) open gifts. Guests mark off squares that match the opened item. I was not satisfied with existing bingo card options and I wanted something that I could easily customize to match items on our registry.
 
 I originally thought this would be a single use application. However, a year later I used it again for a baby shower that I hosted for a friend.  Revisiting the application has prompted me to recreate it as a reusable, customizable web application.
 
