@@ -50,7 +50,7 @@ export class RandomDrawing {
     
     /**
     * Clear the collection of selected words and restore the remaining words to
-    * the original words list
+    * the original words list to begin a new bingo game.
     */
     reset() {
         this.selectedWords = [];
@@ -58,6 +58,9 @@ export class RandomDrawing {
         this.drawnWord = '';
     }
     
+    /**
+     * Return to the previous route
+     */
     back() {
         this.router.navigateBack();
     }
