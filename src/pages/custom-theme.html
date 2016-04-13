@@ -1,5 +1,21 @@
 <template>
     <section>
+        <h1>Create a theme</h1>
+        <p>Supply a list of at least <strong>75</strong> unique words.</p>        
+        <div class="form-inline form-group">
+            <input type="text" class="form-control" ref="word">
+            <button class="btn btn-default" click.trigger="addWord(word.value)">Add</button>
+        </div>
+        <h3>Theme Words <span class="badge">${words.length}</span></h3>        
+        <ul class="list-group word-list panel panel-default">
+            <li class="list-group-item" repeat.for="word of words">
+                ${word}
+            </li>
+        </ul>
+        <div>
+            <a class="btn btn-primary" role="button" click.trigger="generate()">Generate</a> 
+            <a class="btn btn-default" role="button" click.trigger="draw()">Draw</a>
+        </div>
         <a route-href="route: themes">Back to theme selection.</a>
     </section>
 </template>

@@ -1,21 +1,32 @@
 import { inject } from 'aurelia-framework';
+import { Router } from 'aurelia-router';
 import { BingoCardService } from '../service/bingo-card-service';
 
-@inject(BingoCardService)
+@inject(BingoCardService, Router)
 export class RandomDrawing {
     remainingWords = [];
     selectedWords = [];
     drawnWord = '';
     
-    constructor (bingoCardService) {
+    constructor (bingoCardService, router) {
         this.bingoCardService = bingoCardService;
+        this.router = router;
     }
     
     activate (params) {
+        if(params.id === 'custom') {
+            let promise = new Promise((resolve, reject) => {
+                this.remainingWords = this.bingoCardService.getCustomBingoThemeWords();
+                resolve();
+            });
+            
+            return promise;
+        }
+        
         return this.bingoCardService.getBingoThemeById(Number(params.id))
-                                    .then(theme => this.theme = theme)
+                                    .then(theme => this.words = theme.words)
                                     .then( () => {
-                                        this.remainingWords = JSON.parse(JSON.stringify(this.theme.words));
+                                        this.remainingWords = JSON.parse(JSON.stringify(this.words));
                                     });
     }
     
@@ -37,7 +48,11 @@ export class RandomDrawing {
     */
     reset() {
         this.selectedWords = [];
-        this.remainingWords = JSON.parse(JSON.stringify(this.theme.words));
+        this.remainingWords = JSON.parse(JSON.stringify(this.words));
         this.drawnWord = '';
+    }
+    
+    back() {
+        this.router.navigateBack();
     }
 }
