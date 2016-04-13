@@ -16,7 +16,8 @@ export class RandomDrawing {
     activate (params) {
         if(params.id === 'custom') {
             let promise = new Promise((resolve, reject) => {
-                this.remainingWords = this.bingoCardService.getCustomBingoThemeWords();
+                this.words = this.bingoCardService.getCustomBingoThemeWords();
+                this.remainingWords = JSON.parse(JSON.stringify(this.words));
                 resolve();
             });
             
@@ -30,12 +31,16 @@ export class RandomDrawing {
                                     });
     }
     
-    /*
+    /**
     * Removes a word from the pool of avaliable words and places it into
     * a pool of previously selected words to simulate the user randomly
     * drawing a slip of paper from a hat or a bowl.
     */
     draw() {
+        if( this.remainingWords.length === 0 ) {
+            return;
+        }
+        
         let index = this.bingoCardService.getRandomInt(0, this.remainingWords.length);
         this.drawnWord = this.remainingWords[index];
         
@@ -43,8 +48,9 @@ export class RandomDrawing {
         this.remainingWords.splice(index, 1);
     }
     
-    /*
-    * 
+    /**
+    * Clear the collection of selected words and restore the remaining words to
+    * the original words list
     */
     reset() {
         this.selectedWords = [];

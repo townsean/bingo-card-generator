@@ -5,6 +5,7 @@ import { BingoCardService } from '../service/bingo-card-service.js';
 @inject(BingoCardService, Router)
 export class CustomTheme {
     words = [];
+    newWord = "";
     
     constructor(bingoCardService, router) {
         this.bingoCardService = bingoCardService;
@@ -20,8 +21,16 @@ export class CustomTheme {
         return promise;
     }
     
-    addWord(word) {
-        this.words.push(word);
+    onKeyDown(keycode) {
+        if(keycode === "Enter") {
+            addWord();
+        }
+    }
+    
+    addWord() {
+        // I don't like this [ang 4/13/2016]
+        this.words.push(this.newWord);
+        this.newWord = "";
     }
     
     draw() {
