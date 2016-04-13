@@ -4,6 +4,7 @@ import 'fetch';
 
 @inject(HttpClient)
 export class BingoCardService {
+    customThemeWords = [];
     
     /*
     *
@@ -42,6 +43,22 @@ export class BingoCardService {
         });
         
         return promise;   
+    }
+    
+    /**
+     * 
+     * @param {Array} words
+     */
+    setCustomBingoThemeWords(words) {
+        this.customThemeWords = words;
+    }
+    
+    /**
+     * 
+     * @return {Array} customThemeWords
+     */
+    getCustomBingoThemeWords() {
+        return this.customThemeWords;
     }
     
     /*
