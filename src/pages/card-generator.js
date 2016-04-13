@@ -41,12 +41,18 @@ export class CardGenerator {
                                     });
     }
     
+    /**
+     * Clean up resources
+     */
     deactivate() {
         this.subscription.dispose();
     }
     
-    /*
-    *
+    /**
+    * Gets a collection of bingo cards
+    * @param {Number} count
+    * @param {Array} words
+    * @return {Array} cards
     */
     getGeneratedCards(count, words) {
         let cards = [];
@@ -66,7 +72,7 @@ export class CardGenerator {
     }
     
     /**
-     * 
+     * Return to the previous route
      */
     back() {
         this.router.navigateBack();

@@ -33,11 +33,17 @@ export class CustomTheme {
         this.newWord = "";
     }
     
+    /***
+     * Navigate to the route for randomly drawing words
+     */
     draw() {
         this.bingoCardService.setCustomBingoThemeWords(this.words);
         this.router.navigateToRoute('random-drawing', { id: 'custom'});
     }
     
+    /**
+     * Navigate to the route for generating bingo cards
+     */
     generate() {        
         this.bingoCardService.setCustomBingoThemeWords(this.words);
         this.router.navigateToRoute('card-generator', { id: 'custom'});
