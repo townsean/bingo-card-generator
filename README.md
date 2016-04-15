@@ -2,7 +2,7 @@
 
 ## Synopsis
 
-The bingo card generator is an Aurelia web app that gives users the ability to created themed bingo cards.  Users can select from existing themes or create a custom theme of their own.  
+The bingo card generator is an Aurelia web app that gives users the ability to create themed bingo cards.  Users can select from existing themes or create a custom theme of their own.  
 
 ## Motivation
 
