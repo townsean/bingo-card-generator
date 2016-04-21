@@ -1,6 +1,6 @@
 # bingo-card-generator
 
-See in in action [here](http://townsean.github.io/bingo-card-generator/).
+See in it action [here](http://townsean.github.io/bingo-card-generator/)!
 
 ## Synopsis
 
