@@ -1,6 +1,7 @@
 System.config({
   defaultJSExtensions: true,
   transpiler: "babel",
+  buildCSS: false,
   babelOptions: {
     "optional": [
       "es7.decorators",
@@ -8,7 +9,7 @@ System.config({
     ]
   },
   paths: {
-    "*": "src/*",
+    "*": "dist/*",
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
@@ -267,7 +268,7 @@ System.config({
     ]
   },
   bundles: {
-    "dist/app-build.js": [
+    "app-build.js": [
       "app.html!github:systemjs/plugin-text@0.0.4.js",
       "app.js",
       "components/bingo-card.html!github:systemjs/plugin-text@0.0.4.js",
@@ -291,13 +292,15 @@ System.config({
       "pages/themes.js",
       "service/bingo-card-service.js"
     ],
-    "dist/aurelia.js": [
+    "aurelia.js": [
       "github:components/jquery@2.2.0.js",
       "github:components/jquery@2.2.0/jquery.js",
       "github:github/fetch@0.10.1.js",
       "github:github/fetch@0.10.1/fetch.js",
       "github:jspm/nodelibs-process@0.1.2.js",
       "github:jspm/nodelibs-process@0.1.2/index.js",
+      "github:systemjs/plugin-text@0.0.4.js",
+      "github:systemjs/plugin-text@0.0.4/text.js",
       "github:twbs/bootstrap@3.3.6.js",
       "github:twbs/bootstrap@3.3.6/css/bootstrap.css!github:systemjs/plugin-text@0.0.4.js",
       "github:twbs/bootstrap@3.3.6/js/bootstrap.js",
@@ -385,6 +388,8 @@ System.config({
       "npm:aurelia-templating@1.0.0-beta.1.1.1/aurelia-templating.js",
       "npm:core-js@2.1.0.js",
       "npm:core-js@2.1.0/client/shim.min.js",
+      "npm:font-awesome@4.5.0.js",
+      "npm:font-awesome@4.5.0/css/font-awesome.css!github:systemjs/plugin-css@0.1.20.js",
       "npm:jquery@3.0.0.js",
       "npm:jquery@3.0.0/dist/jquery.js",
       "npm:process@0.11.5.js",

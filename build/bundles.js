@@ -4,7 +4,10 @@ module.exports = {
       "includes": [
         "[**/*.js]",
         "**/*.html!text",
-        "**/*.css!text"
+        "**/*.css!text",
+        "[*/**/*.js]",
+        "*/**/*.html!text",
+        "*/**/*.css!text"
       ],
       "options": {
         "inject": true,
@@ -15,22 +18,24 @@ module.exports = {
     },
     "dist/aurelia": {
       "includes": [
-        "aurelia-framework",
-        "aurelia-bootstrapper",
-        "aurelia-fetch-client",
-        "aurelia-router",
-        "aurelia-animator-css",
-        "aurelia-templating-binding",
-        "aurelia-polyfills",
-        "aurelia-templating-resources",
-        "aurelia-templating-router",
-        "aurelia-loader-default",
-        "aurelia-history-browser",
-        "aurelia-logging-console",
-        "bootstrap",
-        "bootstrap/css/bootstrap.css!text",
-        "fetch",
-        "jquery"
+      "aurelia-animator-css",
+      "aurelia-bootstrapper",
+      "aurelia-fetch-client",
+      "aurelia-framework",
+      "aurelia-history-browser",
+      "aurelia-loader-default",
+      "aurelia-logging-console",
+      "aurelia-polyfills",
+      "aurelia-router",
+      "aurelia-templating-binding",
+      "aurelia-templating-resources",
+      "aurelia-templating-router",
+      "bootstrap",      
+      "bootstrap/css/bootstrap.css!text",
+      "fetch",
+      "font-awesome",
+      "jquery",
+      "text"
       ],
       "options": {
         "inject": true,
