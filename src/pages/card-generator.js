@@ -41,7 +41,7 @@ export class CardGenerator {
                                     });
     }
     
-    /***
+    /**
      * Clean up resources
      */
     deactivate() {

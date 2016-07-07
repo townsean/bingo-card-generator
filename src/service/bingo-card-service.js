@@ -6,9 +6,6 @@ import 'fetch';
 export class BingoCardService {
     customThemeWords = [];
     
-    /*
-    *
-    */
     constructor(http) {
         http.configure(config => {
             config
@@ -18,18 +15,13 @@ export class BingoCardService {
         this.http = http;
     }
     
-    /*
-    *
-    */
+
     getAllBingoThemes() {
         return this.http.fetch('/bingo-themes.json')
                         .then(response => response.json())
                         .then(themes => this.themes = themes);
     }
-    
-    /*
-    * @param {Number} id
-    */
+
     getBingoThemeById(id) {
         let promise = new Promise((resolve, reject) => {
             this.getAllBingoThemes()
@@ -39,31 +31,24 @@ export class BingoCardService {
                             resolve(theme);
                         }
                     }
-                })
+                });
         });
         
         return promise;   
     }
     
-    /**
-     * 
-     * @param {Array} words
-     */
+
     setCustomBingoThemeWords(words) {
         this.customThemeWords = words;
     }
-    
-    /**
-     * 
-     * @return {Array} customThemeWords
-     */
+
     getCustomBingoThemeWords() {
         return this.customThemeWords;
     }
     
     /*
-    * Randomly fill in an array representing a bingo card with 
-    * words from given words array
+    * Randomly fill an array representing a bingo card with 
+    * words selected from parameter words array
     * @param {Array} words
     * @return {Array} cardData
     */

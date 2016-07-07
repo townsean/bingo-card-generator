@@ -27,17 +27,14 @@ export class CustomTheme {
         }
     }
     
-    /**
-     * Add a new word to the custom theme collection
-     */
     addWord() {
         // I don't like this [ang 4/13/2016]
         this.words.push(this.newWord);
         this.newWord = "";
     }
     
-    /**
-     * Go to the route for randomly drawing words
+    /***
+     * Navigate to the route for randomly drawing words
      */
     draw() {
         this.bingoCardService.setCustomBingoThemeWords(this.words);
@@ -45,7 +42,7 @@ export class CustomTheme {
     }
     
     /**
-     * Go to the route for generating bingo cards
+     * Navigate to the route for generating bingo cards
      */
     generate() {        
         this.bingoCardService.setCustomBingoThemeWords(this.words);
