@@ -1,0 +1,25 @@
+<template>
+  <header>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <a route-href="route: home"><p class="navbar-brand">Bingo Card Generator</p></a>
+            <ul class="nav navbar-nav navbar-right">
+                <li repeat.for="route of router.navigation">
+                    <a class="$index ? 'active' : ''" href.bind="route.href">${route.title}</a>
+                </li>
+            </ul>
+            <span class="fa fa-spinner fa-spin navbar-right" show.bind="router.isNavigating"></span>
+        </div>
+    </nav>
+  </header>
+  <main>
+      <div class="container">
+        <router-view></router-view>
+      </div>
+  </main>
+  <footer class="navbar navbar-inverse navbar-fixed-bottom">
+      <div class="container">
+        <small class="copyright">&copy; 2016 The Coding Couple. </small>      
+      </div>
+  </footer>
+</template>

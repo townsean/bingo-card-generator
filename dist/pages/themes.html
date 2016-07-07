@@ -1,0 +1,23 @@
+<template>
+    <section class="panel-body">
+        <h1>Select a theme:</h1>
+        <div class="col-md-4" repeat.for="theme of themes">
+            <figure class="thumbnail"> 
+                <img class="img-thumbnail" src="${theme.imgUrl}" alt="${theme.name} picture" >
+                <figcaption class="caption">   
+                    <h3>${theme.name}</h3>
+                    <p>${theme.description}</p>                
+                    <a class="btn btn-primary" role="button" route-href="route: card-generator; 
+                                params.bind: {id: theme.id}">Generate</a> 
+                    <a class="btn btn-default" role="button" route-href="route: random-drawing; 
+                                params.bind: {id: theme.id}">Draw</a> 
+                </figcaption>      
+            </figure>     
+        </div>
+        <div class="col-md-12 panel panel-body">
+            <p>Need something more specific? Create bingo cards using your own theme 
+                <a route-href="route: custom-theme">here</a>.
+            </p>
+        </div>
+    </section>
+</template>
