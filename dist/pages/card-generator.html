@@ -5,9 +5,9 @@
     <aside class="col-md-3">
         <card-settings heading.two-way="theme.name" card-count.two-way="cardCount"></card-settings>
         <div> 
-            <button class="btn btn-primary">Print Cards</button>
+            <button class="btn btn-primary" click.delegate="print()">Print Cards</button>
         </div>
-        <a click.trigger="back()">Back to Theme Selection</a>        
+        <a click.delegate="back()">Back to Theme Selection</a>        
     </aside>
     
     <section class="col-md-9 card-print-area">

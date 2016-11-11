@@ -7,7 +7,7 @@
                 <label for="word">Add a word</label>  
                 <div class="form-inline form-group">
                     <input type="text" class="form-control" id="word" value.bind="newWord">
-                    <button class="btn btn-default" click.trigger="addWord()">Add</button>
+                    <button class="btn btn-default" click.delegate="addWord()">Add</button>
                 </div>
             </div>
         </form>
@@ -18,8 +18,8 @@
             </li>
         </ul>
         <div>
-            <a class="btn btn-primary" role="button" click.trigger="generate()">Generate</a> 
-            <a class="btn btn-default" role="button" click.trigger="draw()">Draw</a>
+            <a class="btn btn-primary" role="button" click.delegate="generate()">Generate</a> 
+            <a class="btn btn-default" role="button" click.delegate="draw()">Draw</a>
         </div>
         <a route-href="route: themes">Back to theme selection.</a>
     </section>

@@ -72,7 +72,9 @@ System.register(['aurelia-framework', 'aurelia-router', '../service/bingo-card-s
                     return cards;
                 };
 
-                CardGenerator.prototype.print = function print() {};
+                CardGenerator.prototype.print = function print() {
+                    window.print();
+                };
 
                 CardGenerator.prototype.back = function back() {
                     this.router.navigateBack();
