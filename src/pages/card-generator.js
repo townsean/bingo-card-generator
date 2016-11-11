@@ -65,10 +65,10 @@ export class CardGenerator {
     }
     
     /**
-    *
+    * Launch the browser's print dialog
     */
     print () {
-        
+        window.print();
     }
     
     /**

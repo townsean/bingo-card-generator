@@ -56,3 +56,22 @@ body {
     color: grey;
 }
 
+@media print {
+    aside {
+        display: none;
+    }
+
+    body {
+        -webkit-print-color-adjust: exact;
+    }
+
+    /* Override Bootstrap's print style */
+    .bingo-card-heading {
+        background: black !important; 
+    }
+
+    /* Override Bootstrap's print style */
+    .bingo-card-heading > h1 {
+        color: white !important;
+    }
+}

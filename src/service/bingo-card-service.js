@@ -60,7 +60,7 @@ export class BingoCardService {
         
         for(let i = 0; i < BINGO_CARD_LENGTH; i++) {
             if (i === BINGO_CARD_MIDDLE_INDEX) {
-                cardData[i] = "BINGO";
+                cardData[i] = "FREE SPACE";
             } else {
                 let index = this.getRandomInt(0, words.length - 1);
                 
